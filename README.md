@@ -16,7 +16,7 @@ Außerdem sollte die SSD bereits erkannt und eine Partition bereits eingerichtet
 * Dann auf `Next`, Namen vergeben und kontrollieren, ob die Checkbox bei `EXT4` gesetzt ist (Standardvorgabe).
 * Nun `Create` anwählen und danach kontrollieren, ob die SSD als `/dev/nvme0n1p1` erscheint.
 
-#### Den Jetson™ von der installierten SD booten, Terminal öffnen und sicherstellen, dass man als root angemeldet ist:
+#### Den Jetson™ von der installierten SD booten (sollte schon so sein), Terminal öffnen und sicherstellen, dass man als root angemeldet ist:
 ```
 sudo su
 cd ~
