@@ -18,21 +18,21 @@ Außerdem sollte die SSD bereits erkannt und eine Partition bereits eingerichtet
 
 #### Den Jetson™ von der installierten SD booten (sollte bereits so sein), Terminal öffnen und sicherstellen, dass man als root angemeldet ist:
 ```
-sudo su
-cd ~
+   sudo su
+   cd ~
 ```
 
 #### Zur Installation könnt ihr dann wie folgt vorgehen, dazu alle Befehle im Terminal ausführen:
 ```
-       git clone https://github.com/wiegehtki/JetsonNX_SSD_Boot.git
-       cd JetsonNX_SSD_Boot
-       sudo chmod +x *sh
+   git clone https://github.com/wiegehtki/JetsonNX_SSD_Boot.git
+   cd JetsonNX_SSD_Boot
+   sudo chmod +x *sh
 ```
 
 Danach die Installation starten:
 
 ```
-       ./install_ssd.sh      
+   ./install_ssd.sh      
 ```
 
 Nach der Installation einen `reboot` ausführen.
