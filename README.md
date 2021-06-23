@@ -7,7 +7,7 @@
 * Mit hoher Wahrscheinlichkeit und abhängig von der gewählten SSD einen deutlichen Performancesprung im Vergleich zur SD generieren.
 
 #### Wichtig: Eine entsprechende M.2 NVMe SSD muss bereits hardwareseitig installiert sein.
-Außerdem sollte die SSD bereits erkannt und eine Partition bereits eingerichtet sein: 
+Außerdem sollte die SSD bereits erkannt und eine Partition bereits eingerichtet sein; hier nochmal die Schritte dazu: 
 * Unter Ubuntu auf "Disks" gehen.
 * SSD sollte gelistet sein.
 * SSD auswählen und im Menü `Format` auswählen und mit `GPT` (Standardvorgabe) formatieren.
