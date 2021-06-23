@@ -8,6 +8,13 @@
 
 #### Wichtig: Eine entsprechende M.2 NVMe SSD muss bereits hardwareseitig installiert sein.
 Außerdem sollte die SSD bereits erkannt und eine Partition bereits eingerichtet sein. 
+* Unter Ubuntu auf "Disks" gehen.
+* SSD sollte gelistet sein.
+* SSD auswählen und im Menü `Format` auswählen und mit `GPT` (Standardvorgabe) formatieren.
+* Prüfen, ob es die richtige SSD ist, authentifizieren und formatieren.
+* Nach der Formatierung SSD auswählen und mit `+` eine Partition erstellen. Ggfs. Grösse anpassen, wenn gewünscht.
+* Dann auf `Next`, Namen vergeben und kontrollieren, ob die Checkbox bei `EXT4` gesetzt ist (Standardvorgabe).
+* Nun `Create` anwählen und danach kontrollieren, ob die SSD als `/dev/nvme0n1p1` erscheint.
 
 #### Den Jetson™ von der installierten SD booten, Terminal öffnen und sicher stellen, dass man als root angemeldet ist:
 ```
