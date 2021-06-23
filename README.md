@@ -9,7 +9,7 @@
 #### Wichtig: Eine entsprechende M.2 NVMe SSD muss bereits hardwareseitig installiert sein.
 Außerdem sollte die SSD bereits erkannt und eine Partition bereits eingerichtet sein; hier nochmal die Schritte dazu: 
 * Unter Ubuntu auf "Disks" gehen.
-* SSD sollte gelistet sein.
+* SSD sollte gelistet sein und als `/dev/nvme0n1` angezeigt werden.
 * SSD auswählen und im Menü `Format` auswählen und mit `GPT` (Standardvorgabe) formatieren.
 * Prüfen, ob es die richtige SSD ist, authentifizieren und formatieren.
 * Nach der Formatierung SSD auswählen und mit `+` eine Partition erstellen. Ggfs. Grösse anpassen, wenn gewünscht.
