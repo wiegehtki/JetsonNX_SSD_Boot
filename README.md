@@ -25,7 +25,7 @@ cd ~
 Danach die Installation starten:
 
 ```
-       ./copy-rootfs-ssd.sh      
+       ./install_ssd.sh      
 ```
 
 Nach der Installation einen `reboot` ausführen.

@@ -1,14 +1,13 @@
 #!/bin/bash
-# Als erstes mounten wir die SSD
-# Normalerweise sollte die SSD als nvme0n1p1 erscheinen
-# Das kann mittels ls /dev/nvm* kontrolliert werden
-
+# Wirklich root?
 if [ "$(whoami)" != "root" ]; then
     ColErr="\033[1;31m"
     NoColErr="\033[0m"
     echo -e ${ColErr} "Benutzer muss root sein, Abbruch..." ${NoColErr}
     exit 255
 else
+    # Als erstes mounten wir die SSD
+    # Normalerweise sollte die SSD als nvme0n1p1 erscheinen (das kann mittels ls /dev/nvm* kontrolliert werden)
     mkdir /mnt/nvme
     mount /dev/nvme0n1p1 /mnt/nvme
 
