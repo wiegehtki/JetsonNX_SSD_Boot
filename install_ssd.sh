@@ -32,7 +32,7 @@ else
         echo "SSD - Service wurde installiert."
         echo "Bitte Jetson neu starten."
     else
-	    echo -e ${ColErr} "SSD - M.2 - Device nicht gefunden. Partition aktiv (mount, siehe Disks)? Abbruch..." ${NoColErr}
+	    echo -e ${ColErr} "SSD - M.2 - Device nicht gefunden. Partition aktiv? (mount, siehe Disks). Abbruch..." ${NoColErr}
         exit 255
     fi	
 fi 
