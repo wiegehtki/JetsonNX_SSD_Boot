@@ -9,9 +9,11 @@ else
     # Als erstes mounten wir die SSD
     # Normalerweise sollte die SSD als nvme0n1p1 oder nvme0n1 erscheinen (das kann mittels ls /dev/nvm* kontrolliert werden)
     if [ ! -d /mnt/nvme ]; then mkdir /mnt/nvme; fi
+    # Standard - mount
     mount /dev/nvme0n1 /mnt/nvme
+    echo "Falls eine Partition existiert, hier noch ein weiterer mount - Versuch auf p1. Wird fehlschlagen wenn der erste mount erfolgreich war."
     mount /dev/nvme0n1p1 /mnt/nvme
-  
+      
     if mountpoint -q /mnt/nvme; then
         # Nun kopieren wir die Installation der SD - Karte auf die SSD
         rsync -axHAWX --numeric-ids --info=progress2 --exclude={"/dev/","/proc/","/sys/","/tmp/","/run/","/mnt/","/media/*","/lost+found"} / /mnt/nvme
