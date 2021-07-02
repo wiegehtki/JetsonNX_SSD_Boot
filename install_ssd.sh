@@ -30,6 +30,7 @@ else
         # setssdrootfs.conf anlegen, dadurch wird der Service von der SSD arbeiten
         # Um wieder von der SD zu booten, einfach /etc/setssdroot.conf löschen
         touch /etc/setssdrootfs.conf
+        apt -y install sysbench
         echo "SSD - Service wurde installiert."
         echo "Bitte Jetson neu starten."
     else
