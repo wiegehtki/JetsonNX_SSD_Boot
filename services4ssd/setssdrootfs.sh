@@ -1,6 +1,6 @@
 #!/bin/sh
 # Schaltet beim Starten das rootfs auf die M.2 NVMe SSD um
-NVME_DRIVE="/dev/nvme0n1p1"
+NVME_DRIVE="/dev/nvme0n1"
 CHROOT_PATH="/nvmeroot"
 
 INITBIN=/lib/systemd/systemd
