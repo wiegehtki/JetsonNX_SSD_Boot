@@ -7,10 +7,10 @@ if [ "$(whoami)" != "root" ]; then
     exit 255
 else
     # Als erstes mounten wir die SSD
-    # Normalerweise sollte die SSD als nvme0n1p1 erscheinen (das kann mittels ls /dev/nvm* kontrolliert werden)
+    # Normalerweise sollte die SSD als nvme0n1p1 oder nvme0n1 erscheinen (das kann mittels ls /dev/nvm* kontrolliert werden)
     if [ ! -d /mnt/nvme ]; then mkdir /mnt/nvme; fi
-    if [   -f /dev/nvme0n1 ]; then mount /dev/nvme0n1 /mnt/nvme; fi
-    if [   -f /dev/nvme0n1p1 ]; then mount /dev/nvme0n1p1 /mnt/nvme; fi
+    mount /dev/nvme0n1 /mnt/nvme
+    mount /dev/nvme0n1p1 /mnt/nvme
   
     if mountpoint -q /mnt/nvme; then
         # Nun kopieren wir die Installation der SD - Karte auf die SSD
